@@ -17,4 +17,5 @@ def my_collect(collection)
     end
     i += 1
   end
+  return_array
 end
