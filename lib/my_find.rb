@@ -12,7 +12,9 @@ def my_collect(collection)
   i = 0
   return_array = []
   while i < collection.length
-    return_array << collection[i] if yield(collection[i])
+    if yield(collection[i])
+      return_array << collection[i]
+    end
     i += 1
   end
 end
